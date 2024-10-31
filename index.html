@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily motivation for women with the That Girl Motivation App - find inspiration every day.">
+  <meta name="keywords" content="motivation, women empowerment, daily quotes, self-care, personal growth">
   <link rel="stylesheet" href="style.css">
   <title>That Girl Motivation App</title>
 </head>
-
 <body>
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
+          <a href="#hero" aria-label="Go to top of page">
             <h1>That Girl Motivation App</h1>
           </a>
         </div>
         <div class="nav-list">
-          <div class="hamburger">
+          <div class="hamburger" role="button" aria-expanded="false">
             <div class="bar"></div>
           </div>
           <ul>
-           <li><a href="contactus.html">Support</a></li>
-            <li><a href="https://apps.apple.com/us/app/that-girl-motivation/id6736867723" target="_blank">Download</a></li>
+            <li><a href="contactus.html" aria-label="Contact Support">Support</a></li>
+            <li><a href="https://apps.apple.com/us/app/that-girl-motivation/id6736867723" target="_blank" aria-label="Download the app">Download</a></li>
           </ul>
         </div>
       </div>
@@ -33,11 +33,18 @@
   <section id="hero">
     <div class="hero container">
       <div>
-        <h1 style="color:white;"> That Girl Motivation App <span></span></h1>
+        <h1>That Girl Motivdation App <span></span></h1>
         <p style="font-size:20px; color:white;">Daily Motivation For All My Girlies</p>
- <a href="https://apps.apple.com/us/app/that-girl-motivation/id6736867723" target="_blank"   type="button" class="cta"    style="font-size: 1.5rem; padding: 9px 15px;">Available on App Store</a>  
+        <a href="https://apps.apple.com/us/app/that-girl-motivation/id6736867723" target="_blank" type="button" class="cta">Available on App Store</a>
       </div>
     </div>
   </section>
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      this.classList.toggle('active');
+      document.querySelector('.nav-list ul').classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
